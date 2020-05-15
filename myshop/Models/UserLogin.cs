@@ -6,6 +6,7 @@ using System.Web;
 
 namespace myshop.Models
 {
+    //Юзер логин
     public class UserLogin
     {
         [Required]
