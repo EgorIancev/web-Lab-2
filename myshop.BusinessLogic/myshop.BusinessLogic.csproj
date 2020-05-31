@@ -51,13 +51,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Core\AdminApi.cs" />
-    <Compile Include="Core\UserApi.cs" />
-    <Compile Include="Core\UserContext.cs" />
-    <Compile Include="Interfaces\ISession.cs" />
+    <Compile Include="API\AdminAPI.cs" />
+    <Compile Include="API\API.cs" />
+    <Compile Include="API\ProductAPI.cs" />
+    <Compile Include="API\UserAPI.cs" />
+    <Compile Include="DataTransfer\ProductDTO.cs" />
+    <Compile Include="DataTransfer\UserDTO.cs" />
+    <Compile Include="Infrastructure\Result.cs" />
+    <Compile Include="Interfaces\IAdminAPI.cs" />
+    <Compile Include="Interfaces\IProductAPI.cs" />
+    <Compile Include="Interfaces\IUserAPI.cs" />
     <Compile Include="MyBusinessLogic.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SessionBL.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\myshop.Domain\myshop.Domain.csproj">
@@ -73,6 +78,7 @@
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>

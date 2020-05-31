@@ -1,4 +1,4 @@
-﻿using myshop.Domain.Entities.User;
+﻿using myshop.BusinessLogic.DataTransfer;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,8 +7,9 @@ using System.Threading.Tasks;
 
 namespace myshop.BusinessLogic.Interfaces
 {
-    public interface ISession
+    public interface IProductAPI
     {
-        ULoginResp UserLogin(ULoginData data);
+        IEnumerable<ProductDTO> GetAllProducts();
+        ProductDTO GetProduct(int productId);
     }
 }
